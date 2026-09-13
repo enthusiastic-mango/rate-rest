@@ -100,6 +100,10 @@ button:hover {
     padding: 1.5rem;         /* Space inside the card */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
     transition: transform 0.2s;  /* Smooth animation on hover */
+
+    text-decoration: none; /* Removes the default underline from links */
+    color: inherit;        /* Prevents the text from turning blue/purple */
+    display: block;        /* Forces the <a> tag to behave exactly like a <div> block */
 }
 
 /* Slight lift effect when you hover over a card */
