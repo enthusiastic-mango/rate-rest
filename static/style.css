@@ -1,0 +1,130 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes footer stick to bottom */
+}
+
+/* Top Menu Styling */
+.top-menu {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.top-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-menu a:hover {
+    color: #ddd;
+}
+
+/* Main Content Area */
+.content {
+    flex: 1; /* Takes up available space */
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the content */
+}
+
+.content h1 {
+    margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to bottom */
+}
+
+/* Container that holds all the cards */
+.items-container {
+    display: flex;
+    flex-direction: column;  /* Stacks cards vertically */
+    gap: 1.5rem;             /* Space between each card */
+}
+
+/* Individual card styling */
+.item-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;     /* This creates the rounded corners! */
+    padding: 1.5rem;         /* Space inside the card */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    transition: transform 0.2s;  /* Smooth animation on hover */
+}
+
+/* Slight lift effect when you hover over a card */
+.item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Name heading inside each card */
+.item-name {
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+/* Address, phone, and rating text */
+.item-address,
+.item-phone,
+.item-rating {
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+/* Make the rating stand out a bit */
+.item-rating {
+    color: #e6a817;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}

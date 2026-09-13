@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Our Items{% endblock %}
+
+{% block content %}
+    <h1>Список ресторанов</h1>
+    
+    <div class="items-container">
+        {% for item in items %}
+            <!-- Each item gets its own card/block -->
+            <div class="item-card">
+                <h2 class="item-name">{{ item.name }}</h2>
+                <p class="item-address">📍 {{ item.address }}</p>
+                <p class="item-phone">📞 {{ item.phone }}</p>
+                <p class="item-rating">⭐ {{ item.rating }} / 5</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
